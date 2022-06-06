@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "pypro"
 version = "0.1.0"
-description = ""
+description = "Curso Django Python Pro Br"
 authors = ["Lucas Martins <i@lucasmartins.eti.br>"]
 
 [tool.poetry.dependencies]
