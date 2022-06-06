@@ -1,11 +1,12 @@
 [tool.poetry]
-name = "cursodjango"
+name = "pypro"
 version = "0.1.0"
 description = ""
 authors = ["Lucas Martins <i@lucasmartins.eti.br>"]
 
 [tool.poetry.dependencies]
 python = "^3.9"
+Django = "^4.0.5"
 
 [tool.poetry.dev-dependencies]
 flake8 = "^4.0.1"
