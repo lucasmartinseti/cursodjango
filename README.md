@@ -3,11 +3,11 @@
 1. Entrega Contínua - CI
 
 - [x] Instalação e configuração do `pyenv`
-    -[x]Foi trocado pelo `poetry`, por estar de acorado com a PEPXXX.
+    - [x]Foi trocado pelo `poetry`, por estar de acorado com a PEPXXX.
 
 - [x] Integração Pipenv Travis e Pyup.
     - [x] Foi usado o GitHub Actions no lugar do Travis por ser FREE.
-    - [] Alterantiva para o Pyup.
+    - [ ] Alterantiva para o Pyup.
 
 - [x] Setup do Projeto e Arquivos Manage.
 
