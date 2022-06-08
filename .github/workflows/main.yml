@@ -23,7 +23,7 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+          if [ -f requirements-dev.txt ]; then pip install -r requirements.txt; fi
       - name: Lint with flake8
         run: |
           flake8 .
@@ -44,7 +44,7 @@ jobs:
         - name: Install dependencies
           run: |
             python -m pip install --upgrade pip
-            if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+            if [ -f requirements-dev.txt ]; then pip install -r requirements.txt; fi
         - name: Teste do app
           run: |
             pytest --cov=pypro
