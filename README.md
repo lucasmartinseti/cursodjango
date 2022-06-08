@@ -16,7 +16,7 @@
 - [x] Deploy Automático.
 
 - [x] Rodando Servidor no Pycharm
-    -[x] Foi usado o `nvim` por ter mais facilidade de uso junto com o `zsh`.
+    - [x] Foi usado o `nvim` por ter mais facilidade de uso junto com o `zsh`.
 
 - [x] Olá Django.
 
