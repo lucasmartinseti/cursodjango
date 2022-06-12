@@ -26,4 +26,5 @@ jobs:
           flake8 .
       - name: Test app
         run: |
+          cp contrib/env-sample .env
           pytest --cov=pypro
