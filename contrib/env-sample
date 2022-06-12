@@ -1,1 +1,3 @@
-DEBUG=True
+DEBUG = True
+SECRET_KEY='ookinuk5reGhe7noh9ohzoh9nei2boovu4aexoh8Eecoovah4hus3BaequieGood'
+ALLOWED_HOSTS='*'
