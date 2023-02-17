@@ -7,7 +7,7 @@ Clonar repositório
 git clone git@github.com:lucasmartinseti/cursodjango.git
 ```
 
-Copiar o arquivo `contrib/env-sample` para a pasta `pypro` e renomear para `.env`
+Copiar o arquivo `contrib/env-sample` para a pasta `pypro` e renomear como `.env`
 
 ```env
 DEBUG=True
