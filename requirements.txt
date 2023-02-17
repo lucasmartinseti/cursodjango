@@ -16,7 +16,6 @@ pluggy==1.0.0
 pycodestyle==2.8.0
 pyflakes==2.4.0
 pylint==2.16.2
--e git+ssh://git@github.com/lucasmartinseti/cursodjango.git@de12b2b0781336b276b78f699d69d2af864debc0#egg=pypro
 pytest==7.2.1
 pytest-cov==3.0.0
 pytest-django==4.5.2
