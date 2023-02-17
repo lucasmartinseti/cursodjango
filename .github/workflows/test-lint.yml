@@ -26,11 +26,11 @@ jobs:
         run: |
           poetry install
           pip install --upgrade pip
-          poetry shell
+        poetry shell:
       - name: Lint code
         run: |
-          flake8 .
+          poetry run flake8 .
       - name: Test code app
         run: |
           cp contrib/env-sample .env
-          pytest --cov=pypro
+          poetry run pytest --cov=pypro
