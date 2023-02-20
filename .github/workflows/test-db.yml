@@ -36,8 +36,7 @@ jobs:
         run: |
           poetry install
           pip install --upgrade pip
-      - name: Test DB
-        run: |
           python manage.py migrate
           python manage.py runserver
           python manange.py test
+
