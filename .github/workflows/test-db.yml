@@ -71,8 +71,7 @@ jobs:
           cp contrib/env-sample .env
           poetry install
           pip install --upgrade pip
-          env
-          #poetry run ./manage.py migrate
-          #poetry run ./manage.py runserver
-          #poetry run ./manange.py test
+          poetry run ./manage.py migrate
+          poetry run ./manage.py runserver
+          poetry run ./manange.py test
 
