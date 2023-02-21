@@ -63,7 +63,7 @@ jobs:
         uses: abatilo/actions-poetry@v2
         with:
           poetry-version: ${{ matrix.poetry-version }}
-      - name: Install dependencies
+      - name: Test Migrate
         env:
           POSTGRES_HOST: localhost
           POSTGRES_PORT: 5432
