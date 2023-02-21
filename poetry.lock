@@ -30,7 +30,10 @@ files = [
 [package.dependencies]
 lazy-object-proxy = ">=1.4.0"
 typing-extensions = {version = ">=4.0.0", markers = "python_version < \"3.11\""}
-wrapt = {version = ">=1.11,<2", markers = "python_version < \"3.11\""}
+wrapt = [
+    {version = ">=1.11,<2", markers = "python_version < \"3.11\""},
+    {version = ">=1.14,<2", markers = "python_version >= \"3.11\""},
+]
 
 [[package]]
 name = "attrs"
@@ -486,7 +489,10 @@ files = [
 [package.dependencies]
 astroid = ">=2.14.2,<=2.16.0-dev0"
 colorama = {version = ">=0.4.5", markers = "sys_platform == \"win32\""}
-dill = {version = ">=0.2", markers = "python_version < \"3.11\""}
+dill = [
+    {version = ">=0.2", markers = "python_version < \"3.11\""},
+    {version = ">=0.3.6", markers = "python_version >= \"3.11\""},
+]
 isort = ">=4.2.5,<6"
 mccabe = ">=0.6,<0.8"
 platformdirs = ">=2.2.0"
@@ -573,14 +579,14 @@ files = [
 
 [[package]]
 name = "setuptools"
-version = "67.3.2"
+version = "67.3.3"
 description = "Easily download, build, install, upgrade, and uninstall Python packages"
 category = "main"
 optional = false
 python-versions = ">=3.7"
 files = [
-    {file = "setuptools-67.3.2-py3-none-any.whl", hash = "sha256:bb6d8e508de562768f2027902929f8523932fcd1fb784e6d573d2cafac995a48"},
-    {file = "setuptools-67.3.2.tar.gz", hash = "sha256:95f00380ef2ffa41d9bba85d95b27689d923c93dfbafed4aecd7cf988a25e012"},
+    {file = "setuptools-67.3.3-py3-none-any.whl", hash = "sha256:9d3de8591bd6f6522594406fa46a6418eabd0562dacb267f8556675762801514"},
+    {file = "setuptools-67.3.3.tar.gz", hash = "sha256:ed4e75fafe103c79b692f217158ba87edf38d31004b9dbc1913debb48793c828"},
 ]
 
 [package.extras]
@@ -724,5 +730,5 @@ files = [
 
 [metadata]
 lock-version = "2.0"
-python-versions = "==3.10.9"
-content-hash = "10b740752fe5a741eed99a193b3370fa63b441f3305ad5f3bfa3e9486f4ab727"
+python-versions = "^3.10.9"
+content-hash = "92efece88b41d24cb2d04fb813cc5d29fc025dcc7c3f7052f8eed151a98366ff"
