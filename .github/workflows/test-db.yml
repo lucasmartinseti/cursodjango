@@ -45,7 +45,10 @@ jobs:
       postgres:
         image: postgres
         env:
-          POSTGRES_PASSWORD: postgres
+          POSTGRES_PASSWORD: test
+          POSTGRES_USER: test
+          POSTGRES_DB: test
+
         options: >-
           --health-cmd pg_isready
           --health-interval 10s
@@ -66,8 +69,7 @@ jobs:
         run: |
           poetry install
           pip install --upgrade pip
-          poetry shell
-          python manage.py migrate
-          python manage.py runserver
-          python manange.py test
+          poetry run ./manage.py migrate
+          poetry run ./manage.py runserver
+          poetry run ./manange.py test
 
