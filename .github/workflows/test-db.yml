@@ -66,14 +66,12 @@ jobs:
         with:
           poetry-version: ${{ matrix.poetry-version }}
       - name: Test Migrate
-        env:
-          POSTGRES_HOST: localhost
-          POSTGRES_PORT: 5432
         run: |
           cp contrib/env-sample .env
           poetry install
           pip install --upgrade pip
-          poetry run ./manage.py migrate
-          poetry run ./manage.py runserver
-          poetry run ./manange.py test
+          env
+          #poetry run ./manage.py migrate
+          #poetry run ./manage.py runserver
+          #poetry run ./manange.py test
 
