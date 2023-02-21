@@ -48,8 +48,6 @@ jobs:
           POSTGRES_PASSWORD: test
           POSTGRES_USER: test
           POSTGRES_DB: test
-          POSTGRES_HOST: postgres
-          POSTGRES_PORT: 5432
         options: >-
           --health-cmd pg_isready
           --health-interval 10s
@@ -66,6 +64,9 @@ jobs:
         with:
           poetry-version: ${{ matrix.poetry-version }}
       - name: Install dependencies
+        env:
+          POSTGRES_HOST: localhost
+          POSTGRES_PORT: 5432
         run: |
           cp contrib/env-sample .env
           poetry install
