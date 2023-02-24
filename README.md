@@ -14,6 +14,20 @@ DEBUG=True
 SECRET_KEY='HASH'
 ALLOWED_HOSTS='*'
 ```
+Para usar outro SGBD adicione `DATABASE_URL` no arquivo `.env`.
+```env
+DATABASE_URL=postgres://dev:dev@127.0.0.1:5432/dev-app
+```
+
+### Usando [Docker Compose](https://docs.docker.com/compose/install/)
+Na raiz no projeto execute:
+```docker
+docker-compose up --build
+```
+Para subir um dump de banco na inicialização do container SGBD, coloque na pasta contrib/db/ o dump
+em formato `*.sql`, `*.sql.gz`, or `*.sh` para executar um script.
+
+
 
 ## Usando [Poetry](https://python-poetry.org/)
 Instale os modulos com o `poetry` na pasta raiz do projeto.
@@ -22,16 +36,16 @@ poetry install
 ```
 > Caso não tenha o `poetry` instalado, segue a documentação. [Poetry Install](https://python-poetry.org/docs/#installation)
 
-Ative o VirtualEnv do projeto.
+Inicie o servidor Django.
+```zsh
+poetry run ./manage.py migrate
+poetry run ./manage.py runserver
+```
+
+Caso queira ativar o VirtualEnv do projeto.
 ```zsh
 poetry shell
 ```
-
-Inicie o servidor Django.
-```zsh
-python3 manage.py runserver
-```
-
 
 ### Atualizações do projeto.
 
