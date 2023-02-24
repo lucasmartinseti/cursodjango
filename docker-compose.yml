@@ -1,0 +1,49 @@
+version: "3.9"
+services:
+  app:
+    build: .
+    container_name: app
+    volumes:
+      - ./:/app
+    networks:
+      - app
+    ports:
+      - 8888:8000
+    depends_on:
+      - "db"
+
+  db:
+    container_name: db
+    image: postgres:alpine
+    environment:
+      POSTGRES_USER: dev
+      POSTGRES_PASSWORD: dev
+      POSTGRES_DB: dev-app
+    volumes:
+      - ./assets/db:/docker-entrypoint-initdb.d
+      - postgres-data:/var/lib/postgresql/data
+    networks:
+      - app
+    ports:
+      - 5432:5432
+    tty: true
+
+  adminer:
+    container_name: adminer
+    image: adminer
+    environment:
+      ADMINER_PLUGINS: tables-filter sql-log
+      ADMINER_DESIGN: dracula
+    networks:
+      - app
+    ports:
+      - 8090:8080
+    tty: true
+    depends_on:
+      - "db"
+
+networks:
+  app:
+
+volumes:
+  postgres-data:
