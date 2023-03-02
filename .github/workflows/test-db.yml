@@ -72,6 +72,5 @@ jobs:
           poetry install
           pip install --upgrade pip
           poetry run ./manage.py migrate
-          poetry run ./manage.py runserver
           poetry run ./manage.py test
 
