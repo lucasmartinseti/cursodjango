@@ -8,9 +8,10 @@ services:
     networks:
       - app
     ports:
-      - 8888:8000
+      - 8000:8000
     depends_on:
       - "db"
+    tty: true
 
   db:
     container_name: db

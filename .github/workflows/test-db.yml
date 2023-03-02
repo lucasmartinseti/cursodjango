@@ -45,11 +45,11 @@ jobs:
       postgres:
         image: postgres:10.8
         env:
-          POSTGRES_PASSWORD: postgres
-          POSTGRES_USER: postgres
-          POSTGRES_DB: test
+          POSTGRES_PASSWORD: dev
+          POSTGRES_USER: dev
+          POSTGRES_DB: dev-app
         ports:
-        - 5432/tcp
+          - 5432:5432
         options: >-
           --health-cmd pg_isready
           --health-interval 10s
@@ -73,5 +73,5 @@ jobs:
           pip install --upgrade pip
           poetry run ./manage.py migrate
           poetry run ./manage.py runserver
-          poetry run ./manange.py test
+          poetry run ./manage.py test
 
