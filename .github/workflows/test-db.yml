@@ -34,7 +34,7 @@ jobs:
           cp contrib/env-sample .env
           poetry run pytest --cov=pypro
 
-  test-postgres:
+  test-migrate:
     name: Test migrate.
     runs-on: ubuntu-22.04
     strategy:
@@ -55,7 +55,6 @@ jobs:
           --health-interval 10s
           --health-timeout 5s
           --health-retries 5
-
     steps:
       - uses: actions/checkout@v3
       - name: Set up Python ${{ matrix.python-version }}
