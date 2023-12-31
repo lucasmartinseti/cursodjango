@@ -103,9 +103,9 @@ psycopg2-binary==2.9.5 ; python_full_version >= "3.10.9" and python_full_version
 pytest-django==4.5.2 ; python_full_version >= "3.10.9" and python_full_version < "4.0.0" \
     --hash=sha256:c60834861933773109334fe5a53e83d1ef4828f2203a1d6a0fa9972f4f75ab3e \
     --hash=sha256:d9076f759bb7c36939dbdd5ae6633c18edfc2902d1a69fdbefd2426b970ce6c2
-pytest==7.2.1 ; python_full_version >= "3.10.9" and python_full_version < "4.0.0" \
-    --hash=sha256:c7c6ca206e93355074ae32f7403e8ea12163b1163c976fee7d4d84027c162be5 \
-    --hash=sha256:d45e0952f3727241918b8fd0f376f5ff6b301cc0777c6f9a556935c92d8a7d42
+pytest==7.4.4; python_full_version >= "3.10.9" and python_full_version < "4.0.0" \
+    --hash=sha256:2cf0005922c6ace4a3e2ec8b4080eb0d9753fdc93107415332f50ce9e7994280 \
+    --hash=sha256:b090cdf5ed60bf4c45261be03239c2c1c22df034fbffe691abe93cd80cea01d8
 python-decouple==3.7 ; python_full_version >= "3.10.9" and python_full_version < "4.0.0" \
     --hash=sha256:1596dad2670cca5b1f87d087d9adb6a1958c590df346b85d4b19a9d6f0d52cef \
     --hash=sha256:e88a8d6bdf3b07d471a854099e455e20a6fa7a4d6ecf8631b250e3db654336e6
