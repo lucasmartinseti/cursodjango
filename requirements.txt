@@ -109,9 +109,9 @@ pytest==7.2.1 ; python_full_version >= "3.10.9" and python_full_version < "4.0.0
 python-decouple==3.7 ; python_full_version >= "3.10.9" and python_full_version < "4.0.0" \
     --hash=sha256:1596dad2670cca5b1f87d087d9adb6a1958c590df346b85d4b19a9d6f0d52cef \
     --hash=sha256:e88a8d6bdf3b07d471a854099e455e20a6fa7a4d6ecf8631b250e3db654336e6
-setuptools==67.3.3 ; python_full_version >= "3.10.9" and python_full_version < "4.0.0" \
-    --hash=sha256:9d3de8591bd6f6522594406fa46a6418eabd0562dacb267f8556675762801514 \
-    --hash=sha256:ed4e75fafe103c79b692f217158ba87edf38d31004b9dbc1913debb48793c828
+setuptools==70.0.0; python_full_version >= "3.10.9" and python_full_version < "4.0.0" \
+    --hash=sha256:54faa7f2e8d2d11bcd2c07bed282eef1046b5c080d1c32add737d7b5817b1ad4 \
+    --hash=sha256:f211a66637b8fa059bb28183da127d4e86396c991a942b028c6650d4319c3fd0
 sqlparse==0.4.3 ; python_full_version >= "3.10.9" and python_full_version < "4.0.0" \
     --hash=sha256:0323c0ec29cd52bceabc1b4d9d579e311f3e4961b98d174201d5622a23b85e34 \
     --hash=sha256:69ca804846bb114d2ec380e4360a8a340db83f0ccf3afceeb1404df028f57268
