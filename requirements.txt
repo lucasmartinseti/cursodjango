@@ -28,7 +28,7 @@ packaging==23.0 ; python_full_version >= "3.10.9" and python_full_version < "4.0
 pluggy==1.0.0 ; python_full_version >= "3.10.9" and python_full_version < "4.0.0" \
     --hash=sha256:4224373bacce55f955a878bf9cfa763c1e360858e330072059e10bad68531159 \
     --hash=sha256:74134bbf457f031a36d68416e1509f34bd5ccc019f0bcc952c7b909d06b37bd3
-psycopg2-binary==2.9.5 ; python_full_version >= "3.10.9" and python_full_version < "4.0.0" \
+psycopg2-binary==2.9.10 ; python_full_version >= "3.10.9" and python_full_version < "4.0.0" \
     --hash=sha256:00475004e5ed3e3bf5e056d66e5dcdf41a0dc62efcd57997acd9135c40a08a50 \
     --hash=sha256:01ad49d68dd8c5362e4bfb4158f2896dc6e0c02e87b8a3770fc003459f1a4425 \
     --hash=sha256:024030b13bdcbd53d8a93891a2cf07719715724fc9fee40243f3bd78b4264b8f \
